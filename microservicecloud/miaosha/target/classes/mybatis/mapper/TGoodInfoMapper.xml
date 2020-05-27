@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.csii.springcloud.dao.TGoodInfoDao">
+ 
+
+  <update id="updateAmount" parameterType="java.util.HashMap">
+  	update t_good_info set amout=amout - #{buys}
+  	where code=#{code} and amout - #{buys} >0
+  </update>
+  
+  <select id="queryAmout" parameterType="java.util.HashMap" resultType="java.lang.Integer">
+  	SELECT amout FROM t_good_info WHERE CODE=#{code}
+  </select>
+</mapper>
+ 
+

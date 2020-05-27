@@ -1,0 +1,5 @@
+com\csii\springcloud\entities\TGoodInfo.class
+com\csii\springcloud\service\DeptClientServiceFallbackFactory.class
+com\csii\springcloud\entities\Dept.class
+com\csii\springcloud\service\DeptClientService.class
+com\csii\springcloud\service\DeptClientServiceFallbackFactory$1.class
